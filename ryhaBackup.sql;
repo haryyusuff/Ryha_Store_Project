@@ -1,0 +1,223 @@
+-- MariaDB dump 10.19  Distrib 10.4.32-MariaDB, for Win64 (AMD64)
+--
+-- Host: localhost    Database: ryhadb
+-- ------------------------------------------------------
+-- Server version	10.4.32-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `calendar`
+--
+
+DROP TABLE IF EXISTS `calendar`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `calendar` (
+  `orderDate` date NOT NULL,
+  PRIMARY KEY (`orderDate`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `calendar`
+--
+
+LOCK TABLES `calendar` WRITE;
+/*!40000 ALTER TABLE `calendar` DISABLE KEYS */;
+INSERT INTO `calendar` VALUES ('2023-08-01'),('2023-08-02'),('2023-08-03'),('2023-08-04'),('2023-08-05'),('2023-08-06'),('2023-08-07'),('2023-08-08'),('2023-08-09'),('2023-08-10'),('2023-08-11'),('2023-08-12'),('2023-08-13'),('2023-08-14'),('2023-08-15'),('2023-08-16'),('2023-08-17'),('2023-08-18'),('2023-08-19'),('2023-08-20'),('2023-08-21'),('2023-08-22'),('2023-08-23'),('2023-08-24'),('2023-08-25'),('2023-08-26'),('2023-08-27'),('2023-08-28'),('2023-08-29'),('2023-08-30'),('2023-08-31'),('2023-09-01'),('2023-09-02'),('2023-09-03'),('2023-09-04'),('2023-09-05'),('2023-09-06'),('2023-09-07'),('2023-09-08'),('2023-09-09'),('2023-09-10'),('2023-09-11'),('2023-09-12'),('2023-09-13'),('2023-09-14'),('2023-09-15'),('2023-09-16'),('2023-09-17'),('2023-09-18'),('2023-09-19'),('2023-09-20'),('2023-09-21'),('2023-09-22'),('2023-09-23'),('2023-09-24'),('2023-09-25'),('2023-09-26'),('2023-09-27'),('2023-09-28'),('2023-09-29'),('2023-09-30'),('2023-10-01'),('2023-10-02'),('2023-10-03'),('2023-10-04'),('2023-10-05'),('2023-10-06'),('2023-10-07'),('2023-10-08'),('2023-10-09'),('2023-10-10'),('2023-10-11'),('2023-10-12'),('2023-10-13'),('2023-10-14'),('2023-10-15'),('2023-10-16'),('2023-10-17'),('2023-10-18'),('2023-10-19'),('2023-10-20'),('2023-10-21'),('2023-10-22'),('2023-10-23'),('2023-10-24'),('2023-10-25'),('2023-10-26'),('2023-10-27'),('2023-10-28'),('2023-10-29'),('2023-10-30'),('2023-10-31'),('2023-11-01'),('2023-11-02'),('2023-11-03'),('2023-11-04'),('2023-11-05'),('2023-11-06'),('2023-11-07'),('2023-11-08'),('2023-11-09'),('2023-11-10'),('2023-11-11'),('2023-11-12'),('2023-11-13'),('2023-11-14'),('2023-11-15'),('2023-11-16'),('2023-11-17'),('2023-11-18'),('2023-11-19'),('2023-11-20'),('2023-11-21'),('2023-11-22'),('2023-11-23'),('2023-11-24'),('2023-11-25'),('2023-11-26'),('2023-11-27'),('2023-11-28'),('2023-11-29'),('2023-11-30'),('2023-12-01'),('2023-12-02'),('2023-12-03'),('2023-12-04'),('2023-12-05'),('2023-12-06'),('2023-12-07'),('2023-12-08'),('2023-12-09'),('2023-12-10'),('2023-12-11'),('2023-12-12'),('2023-12-13'),('2023-12-14'),('2023-12-15'),('2023-12-16'),('2023-12-17'),('2023-12-18'),('2023-12-19'),('2023-12-20'),('2023-12-21'),('2023-12-22'),('2023-12-23'),('2023-12-24'),('2023-12-25'),('2023-12-26'),('2023-12-27'),('2023-12-28'),('2023-12-29'),('2023-12-30'),('2023-12-31'),('2024-01-01'),('2024-01-02'),('2024-01-03'),('2024-01-04'),('2024-01-05'),('2024-01-06'),('2024-01-07'),('2024-01-08'),('2024-01-09'),('2024-01-10'),('2024-01-11'),('2024-01-12'),('2024-01-13'),('2024-01-14'),('2024-01-15'),('2024-01-16'),('2024-01-17'),('2024-01-18'),('2024-01-19'),('2024-01-20'),('2024-01-21'),('2024-01-22'),('2024-01-23'),('2024-01-24'),('2024-01-25'),('2024-01-26'),('2024-01-27'),('2024-01-28'),('2024-01-29'),('2024-01-30'),('2024-01-31'),('2024-02-01'),('2024-02-02'),('2024-02-03'),('2024-02-04'),('2024-02-05'),('2024-02-06'),('2024-02-07'),('2024-02-08'),('2024-02-09'),('2024-02-10'),('2024-02-11'),('2024-02-12'),('2024-02-13'),('2024-02-14'),('2024-02-15'),('2024-02-16'),('2024-02-17'),('2024-02-18'),('2024-02-19'),('2024-02-20'),('2024-02-21'),('2024-02-22'),('2024-02-23'),('2024-02-24'),('2024-02-25'),('2024-02-26'),('2024-02-27'),('2024-02-28'),('2024-02-29');
+/*!40000 ALTER TABLE `calendar` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `category`
+--
+
+DROP TABLE IF EXISTS `category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `category` (
+  `categoryKey` int(1) NOT NULL,
+  `categoryBrand` varchar(11) DEFAULT NULL,
+  PRIMARY KEY (`categoryKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `category`
+--
+
+LOCK TABLES `category` WRITE;
+/*!40000 ALTER TABLE `category` DISABLE KEYS */;
+INSERT INTO `category` VALUES (1,'910 Nineten'),(2,'Adidas'),(3,'Diadora'),(4,'New Balance'),(5,'Ortuseight'),(6,'Puma'),(7,'Reebok');
+/*!40000 ALTER TABLE `category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `channel`
+--
+
+DROP TABLE IF EXISTS `channel`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `channel` (
+  `channelKey` int(1) NOT NULL,
+  `channelName` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`channelKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `channel`
+--
+
+LOCK TABLES `channel` WRITE;
+/*!40000 ALTER TABLE `channel` DISABLE KEYS */;
+INSERT INTO `channel` VALUES (1,'Facebook Marketplace'),(2,'Shopee'),(3,'Tokopedia'),(4,'Carousell'),(5,'Instagram'),(6,'Whatsapp Business');
+/*!40000 ALTER TABLE `channel` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `customer`
+--
+
+DROP TABLE IF EXISTS `customer`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `customer` (
+  `customerKey` int(2) NOT NULL,
+  `email` varchar(25) DEFAULT NULL,
+  `firstName` varchar(11) DEFAULT NULL,
+  `lastName` varchar(8) DEFAULT NULL,
+  `birthDate` date DEFAULT NULL,
+  `gender` varchar(1) DEFAULT NULL,
+  `maritalStatus` varchar(1) DEFAULT NULL,
+  PRIMARY KEY (`customerKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `customer`
+--
+
+LOCK TABLES `customer` WRITE;
+/*!40000 ALTER TABLE `customer` DISABLE KEYS */;
+INSERT INTO `customer` VALUES (1,'tricahya@gmail.com','Tri','Cahya','1998-12-20','M','M'),(2,'ratnadewi@gmail.com','Ratna','Dewi','1987-04-18','F','S'),(3,'yusufzakaria@gmail.com','Yusuf','Zakaria','2003-08-21','M','S'),(4,'hadijahpurnama@gmail.com','Hadijah','Purnama','1997-04-14','F','S'),(5,'umaramir@gmail.com','Umar','Amir','1989-07-22','M','M'),(6,'burhanuddinhadi@gmail.com','Burhanuddin','Hadi','1987-09-26','M','S'),(7,'nurulbambang@gmail.com','Nurul','Bambang','1984-09-27','M','M'),(8,'suryaridwan@gmail.com','Surya','Ridwan','2000-06-14','M','M'),(9,'bambangeka@gmail.com','Bambang','Eka','1999-12-21','M','S'),(10,'bimatirta@gmail.com','Bima','Tirta','1994-04-20','M','M'),(11,'anisanirmala@gmail.com','Anisa','Nirmala','2002-12-24','F','M'),(12,'krisnayusuf@gmail.com','Krisna','Yusuf','1991-10-06','M','M'),(13,'fatimahmawar@gmail.com','Fatimah','Mawar','1987-12-11','F','S'),(14,'putraabdullah@gmail.com','Putra','Abdullah','1998-06-26','M','M'),(15,'ratuyuliana@gmail.com','Ratu','Yuliana','1994-04-10','F','S'),(16,'megaimam@gmail.com','Mega','Imam','1987-03-11','M','M'),(17,'irfanhasan@gmail.com','Irfan','Hasan','2004-04-25','M','S'),(18,'indahsitti@gmail.com','Indah','Sitti','1989-01-13','F','M'),(19,'hadijahmega@gmail.com','Hadijah','Mega','2005-11-27','F','S'),(20,'ibrahimusman@gmail.com','Ibrahim','Usman','1994-02-02','M','M'),(21,'bagusidris@gmail.com','Bagus','Idris','2001-11-09','M','M'),(22,'agusslamet@gmail.com','Agus','Slamet','2005-02-11','M','M'),(23,'trirahman@gmail.com','Tri','Rahman','1997-02-09','M','S'),(24,'sulaimananwar@gmail.com','Sulaiman','Anwar','2002-09-07','M','M'),(25,'trisetiawan@gmail.com','Tri','Setiawan','1997-04-27','M','S'),(26,'bimaanwar@gmail.com','Bima','Anwar','1985-02-03','M','S'),(27,'lestaridian@gmail.com','Lestari','Dian','1994-01-09','F','S'),(28,'bambangtirto@gmail.com','Bambang','Tirto','1997-02-03','M','S'),(29,'taufikridwan@gmail.com','Taufik','Ridwan','2001-07-14','M','M'),(30,'megarustam@gmail.com','Mega','Rustam','2000-12-14','M','S'),(31,'dwihasan@gmail.com','Dwi','Hasan','1997-10-10','M','M'),(32,'putricahya@gmail.com','Putri','Cahya','1997-02-13','F','S'),(33,'dianali@gmail.com','Dian','Ali','1998-08-19','M','M'),(34,'ridwantirta@gmail.com','Ridwan','Tirta','1990-07-09','M','S'),(35,'aisyahsiti@gmail.com','Aisyah','Siti','1996-08-01','F','S'),(36,'nurulalya@gmail.com','Nurul','Alya','2006-02-11','F','S'),(37,'wangicinta@gmail.com','Wangi','Cinta','1993-02-03','F','S'),(38,'jamilahtirta@gmail.com','Jamilah','Tirta','2000-11-01','F','S'),(39,'aisyahdian@gmail.com','Aisyah','Dian','1990-02-09','F','M'),(40,'darmaabdullah@gmail.com','Darma','Abdullah','2003-07-28','M','M'),(41,'aisyahcinta@gmail.com','Aisyah','Cinta','2004-05-30','F','S'),(42,'ruslanyusuf@gmail.com','Ruslan','Yusuf','2006-04-13','M','M'),(43,'muhamadharta@gmail.com','Muhamad','Harta','1997-09-17','M','M'),(44,'akbarkrisna@gmail.com','Akbar','Krisna','1989-08-10','M','S'),(45,'putraedi@gmail.com','Putra','Edi','1995-10-23','M','S'),(46,'danialyohanes@gmail.com','Danial','Yohanes','1998-12-08','M','S'),(47,'ruslanzulfikar@gmail.com','Ruslan','Zulfikar','1999-12-10','M','S'),(48,'putraadi@gmail.com','Putra','Adi','2004-02-16','M','S'),(49,'lutfinurul@gmail.com','Lutfi','Nurul','1997-03-18','M','M'),(50,'mawarsari@gmail.com','Mawar','Sari','2004-04-22','F','S'),(51,'nurulabdul@gmail.com','Nurul','Abdul','1996-06-17','M','S'),(52,'aminahannisa@gmail.com','Aminah','Annisa','2005-01-28','F','S'),(53,'akhmadfaisal@gmail.com','Akhmad','Faisal','1996-07-26','M','S'),(54,'buanamohamad@gmail.com','Buana','Mohamad','1990-11-05','M','S'),(55,'mawarhadijah@gmail.com','Mawar','Hadijah','1987-09-20','F','S'),(56,'hidayatridwan@gmail.com','Hidayat','Ridwan','1984-08-11','M','S'),(57,'wahyuumar@gmail.com','Wahyu','Umar','1993-07-18','M','M'),(58,'anwarhidayat@gmail.com','Anwar','Hidayat','1994-04-18','M','S');
+/*!40000 ALTER TABLE `customer` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `location`
+--
+
+DROP TABLE IF EXISTS `location`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `location` (
+  `locationKey` int(2) NOT NULL,
+  `island` varchar(13) DEFAULT NULL,
+  `province` varchar(19) DEFAULT NULL,
+  `city` varchar(17) DEFAULT NULL,
+  PRIMARY KEY (`locationKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `location`
+--
+
+LOCK TABLES `location` WRITE;
+/*!40000 ALTER TABLE `location` DISABLE KEYS */;
+INSERT INTO `location` VALUES (1,'Sumatera','Sumatera Utara','Pakpak Bharat'),(2,'Sumatera','Kepulauan Riau','Batam'),(3,'Sumatera','Riau','Duri'),(4,'Sumatera','Lampung','Bandar Lampung'),(5,'Jawa','Banten','Serang'),(6,'Jawa','Banten','Tangerang Selatan'),(7,'Jawa','Banten','Tangerang'),(8,'Jawa','DKI Jakarta','Jakarta Utara'),(9,'Jawa','DKI Jakarta','Jakarta Pusat'),(10,'Jawa','DKI Jakarta','Jakarta Barat'),(11,'Jawa','DKI Jakarta','Jakarta Selatan'),(12,'Jawa','Jawa Barat','Bogor'),(13,'Jawa','Jawa Barat','Bekasi'),(14,'Jawa','Jawa Barat','Sumedang'),(15,'Jawa','Jawa Barat','Majalengka'),(16,'Jawa','Jawa Barat','Bandung'),(17,'Jawa','Jawa Barat','Banjar'),(18,'Jawa','Jawa Barat','Karawang'),(19,'Jawa','Jawa Barat','Cirebon'),(20,'Jawa','Jawa Tengah','Klaten'),(21,'Jawa','Jawa Tengah','Sragen'),(22,'Jawa','Jawa Tengah','Tegal'),(23,'Jawa','Jawa Tengah','Brebes'),(24,'Jawa','Jawa Tengah','Semarang'),(25,'Jawa','Jawa Tengah','Wonosobo'),(26,'Jawa','Jawa Timur','Surabaya'),(27,'Jawa','Jawa Timur','Ngajuk'),(28,'Nusa Tenggara','Nusa Tenggara Barat','Sumbawa'),(29,'Kalimantan','Kalimantan Timur','Balikpapan');
+/*!40000 ALTER TABLE `location` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product`
+--
+
+DROP TABLE IF EXISTS `product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `product` (
+  `productKey` int(2) NOT NULL,
+  `categoryKey` int(1) DEFAULT NULL,
+  `productName` varchar(18) DEFAULT NULL,
+  `productSize` int(2) DEFAULT NULL,
+  `productCondition` varchar(4) DEFAULT NULL,
+  ` productCost` int(3) DEFAULT NULL,
+  ` productPrice` int(3) DEFAULT NULL,
+  PRIMARY KEY (`productKey`),
+  KEY `FK_productCategory` (`categoryKey`),
+  CONSTRAINT `FK_productCategory` FOREIGN KEY (`categoryKey`) REFERENCES `category` (`categoryKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product`
+--
+
+LOCK TABLES `product` WRITE;
+/*!40000 ALTER TABLE `product` DISABLE KEYS */;
+INSERT INTO `product` VALUES (1,4,'Kaiha Road',42,'New',400,750),(2,1,'Hanna',43,'Used',250,350),(3,4,'DRFT v2',40,'New',280,330),(4,1,'Aurorun',42,'New',300,420),(5,7,'Royal Complete CLN',42,'New',290,330),(6,5,'Reign',42,'New',270,400),(7,1,'Hanna',42,'New',200,320),(8,1,'Haze Tempo',42,'New',400,550),(9,1,'Haze Tempo',41,'New',350,500),(10,2,'Questar Flow NXT',44,'New',300,370),(11,5,'Hyperblast Neo',41,'New',300,400),(12,4,'WQUI',40,'Used',275,325),(13,5,'Hyperfuse 2.0',42,'Used',270,430),(14,4,'Fuelcell Rebel v3',41,'Used',200,470),(15,1,'Haze Vision 1.0',44,'New',200,350),(16,2,'Galaxy 6',43,'New',300,250),(17,1,'Takashi Run 1.5',44,'New',250,550),(18,1,'Kanzaki',42,'New',280,430),(19,5,'Hyperglide 2.0',41,'Used',250,430),(20,6,'Transport Modern',40,'New',325,400),(21,1,'Haze Vision 1.0',42,'New',200,300),(22,1,'Geist Ekiden',41,'New',200,300),(23,2,'Runfalcon',41,'Used',150,300),(24,4,'420 v3',41,'Used',250,300),(25,1,'Kanzaki',41,'New',270,310),(26,5,'Hyperblast Encore',41,'New',250,430),(27,7,'Fluxlite',42,'New',250,300),(28,5,'Hyperglide 2.0',42,'New',300,450),(29,7,'Royal Complete CLN',42,'New',290,350),(30,5,'Hyperblast Encore',43,'New',300,400),(31,4,'420 v2',42,'New',230,350),(32,1,'Ryuga',42,'New',250,330),(33,1,'Kizuna',41,'New',250,300),(34,4,'Fuelcell Rebel v3',44,'Used',300,700),(35,5,'Hyperglide 2.0',43,'Used',250,400),(36,4,'DRFT v2',42,'New',280,300),(37,1,'Geist Ekiden',40,'New',200,330),(38,4,'Evoz v2',42,'Used',150,360),(39,7,'Royal Complete CLN',37,'New',280,350),(40,1,'Haze Infiknit',42,'New',280,380),(41,1,'Haze Vision 1.0',43,'New',200,330),(42,6,'Flyer Flex Knit',41,'New',200,320),(43,1,'Haze Vision 1.0',42,'New',200,330),(44,7,'Fluxlite',41,'New',250,300),(45,4,'680 v7',41,'Used',210,410),(46,3,'Fana',41,'New',180,220),(47,5,'Hyperblast Encore',43,'New',270,400),(48,7,'Royal Complete SPO',42,'New',300,350),(49,7,'Zig Dynamica 4',38,'New',400,500),(50,1,'Haze Vision SE MGL',41,'New',310,430),(51,5,'Hyperglide 2.0',40,'Used',300,500),(52,4,'413',43,'Used',120,240),(53,4,'680 v7',43,'Used',100,262),(54,4,'X 880 v12',42,'Used',150,390),(55,5,'Hyperfuse 1.2',43,'Used',150,380),(56,7,'Flexagon',43,'Used',130,300),(57,3,'Gulo',41,'New',180,210),(58,1,'Geist Ekiden',41,'Used',250,300);
+/*!40000 ALTER TABLE `product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `sales`
+--
+
+DROP TABLE IF EXISTS `sales`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `sales` (
+  `orderDate` date DEFAULT NULL,
+  `orderID` int(2) NOT NULL,
+  `productKey` int(2) DEFAULT NULL,
+  `customerKey` int(2) DEFAULT NULL,
+  `locationKey` int(2) DEFAULT NULL,
+  `channelKey` int(1) DEFAULT NULL,
+  `orderQuantity` int(1) DEFAULT NULL,
+  PRIMARY KEY (`orderID`),
+  KEY `FK_salesCalendar` (`orderDate`),
+  KEY `FK_salesProduct` (`productKey`),
+  KEY `FK_salesCustomer` (`customerKey`),
+  KEY `FK_salesLocation` (`locationKey`),
+  KEY `FK_salesChannel` (`channelKey`),
+  CONSTRAINT `FK_salesCalendar` FOREIGN KEY (`orderDate`) REFERENCES `calendar` (`orderDate`),
+  CONSTRAINT `FK_salesChannel` FOREIGN KEY (`channelKey`) REFERENCES `channel` (`channelKey`),
+  CONSTRAINT `FK_salesCustomer` FOREIGN KEY (`customerKey`) REFERENCES `customer` (`customerKey`),
+  CONSTRAINT `FK_salesLocation` FOREIGN KEY (`locationKey`) REFERENCES `location` (`locationKey`),
+  CONSTRAINT `FK_salesProduct` FOREIGN KEY (`productKey`) REFERENCES `product` (`productKey`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `sales`
+--
+
+LOCK TABLES `sales` WRITE;
+/*!40000 ALTER TABLE `sales` DISABLE KEYS */;
+INSERT INTO `sales` VALUES ('2023-08-22',1,31,35,26,2,1),('2023-09-02',2,16,33,21,1,1),('2023-09-07',3,42,37,6,2,1),('2023-09-08',4,52,34,6,2,1),('2023-09-16',5,45,45,6,1,1),('2023-09-26',6,3,48,12,2,1),('2023-09-29',7,36,46,6,6,1),('2023-10-02',8,5,5,6,2,1),('2023-10-03',9,46,20,6,2,1),('2023-10-03',10,22,49,26,6,1),('2023-10-06',11,44,9,5,1,1),('2023-10-07',12,29,12,13,6,1),('2023-10-13',13,38,7,15,2,1),('2023-10-13',14,2,24,11,2,1),('2023-10-15',15,14,3,4,1,1),('2023-10-17',16,12,11,6,4,1),('2023-10-19',17,27,8,6,2,1),('2023-11-13',18,7,25,7,5,1),('2023-11-14',19,48,23,11,2,1),('2023-11-17',20,53,16,13,2,1),('2023-11-18',21,33,29,6,1,1),('2023-11-25',22,58,44,20,2,1),('2023-11-25',23,21,31,9,2,1),('2023-11-27',24,15,28,6,1,1),('2023-11-29',25,32,54,1,2,1),('2023-12-01',26,23,27,7,6,1),('2023-12-04',27,39,52,10,1,1),('2023-12-05',28,54,1,6,2,1),('2023-12-05',29,19,6,12,1,1),('2023-12-06',30,30,26,20,1,1),('2023-12-09',31,43,15,22,1,1),('2023-12-10',32,4,13,12,2,1),('2023-12-13',33,13,51,16,6,1),('2023-12-13',34,47,56,28,1,1),('2023-12-16',35,34,38,6,2,1),('2023-12-16',36,6,10,17,6,1),('2023-12-18',37,35,43,19,2,1),('2023-12-19',38,17,17,29,4,1),('2023-12-20',39,20,58,6,6,1),('2023-12-22',40,10,19,6,2,1),('2023-12-23',41,55,30,23,1,1),('2023-12-30',42,41,21,8,6,1),('2024-01-07',43,51,36,24,1,1),('2024-01-09',44,37,39,18,6,1),('2024-01-09',45,1,40,8,2,1),('2024-01-11',46,25,32,18,6,1),('2024-01-12',47,49,4,2,2,1),('2024-01-15',48,40,42,13,4,1),('2024-01-15',49,26,14,6,5,1),('2024-01-19',50,28,57,27,2,1),('2024-01-29',51,50,2,24,2,1),('2024-01-31',52,11,53,6,1,1),('2024-02-02',53,57,50,25,2,1),('2024-02-03',54,8,47,3,2,1),('2024-02-05',55,18,22,4,2,1),('2024-02-26',56,9,41,14,6,1),('2024-02-27',57,24,18,5,2,1),('2024-02-29',58,56,55,6,2,1);
+/*!40000 ALTER TABLE `sales` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-05-07 16:58:48
